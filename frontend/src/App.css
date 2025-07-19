@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake, bumblebee, emerald, corporate, synthwave, retro, cyberpunk, valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy, wireframe, black, luxury, dracula, cmyk, autumn, business, acid, lemonade, night, coffee, winter, dim, nord, sunset;
+}
+/*animal thing in teh authpattern:*/
+/* 🐇 Rabbit (jump + rotate) */
+@keyframes bunnyJump {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(0) rotate(10deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-5deg);
+  }
+}
+.custom-bounce {
+  animation: bunnyJump 2s infinite;
+}
+
+/* 🦋 Butterfly (float side to side) */
+@keyframes flutter {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(10px) translateY(-10px);
+  }
+}
+.custom-float {
+  animation: flutter 2.5s ease-in-out infinite;
+}
+
+/* 🐱 Slide around */
+@keyframes slideMeow {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(15px); }
+}
+.custom-slide {
+  animation: slideMeow 1.8s ease-in-out infinite;
+}
+
+/* 🐶 Wiggle */
+@keyframes wigglePup {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+.custom-wiggle {
+  animation: wigglePup 1s infinite;
+}
+
+/* 🐿️ Shake left-right */
+@keyframes shakeTail {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-8px); }
+}
+.custom-shake {
+  animation: shakeTail 1.5s ease-in-out infinite;
+}
+
+/* 🐌 Crawl slowly */
+@keyframes snailCrawl {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+.custom-crawl {
+  animation: snailCrawl 5s ease-in-out infinite;
+}
+
+/* 🐢 Turtle bounce slow */
+@keyframes turtleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.custom-slowBounce {
+  animation: turtleBounce 3s infinite;
+}
+
+/* 🐟 Swim in wave */
+@keyframes fishSwim {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-5px) rotate(5deg); }
+}
+.custom-swim {
+  animation: fishSwim 2.2s ease-in-out infinite;
+}
+
+/* 🦝 Pop up and down */
+@keyframes raccoonPop {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+.custom-pop {
+  animation: raccoonPop 1.5s ease-in-out infinite;
+}
